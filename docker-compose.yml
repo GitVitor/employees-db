@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  employeesdb:
+    build: .
+    environment:
+      MYSQL_ROOT_PASSWORD: "admin"
+      MYSQL_DATABASE: "employees"
+    ports:
+      - "3306:3306"
